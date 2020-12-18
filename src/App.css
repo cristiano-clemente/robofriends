@@ -1,20 +1,14 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background: linear-gradient(to left, rgb(7,27,82) 0%, rgb(0,128,128) 100%);
 }
 
-h1 {
-  color: #0ccac4;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
+/* hide scrollbar */
 *::-webkit-scrollbar {
-  display: none;
+  display: none;  /* chrome, safari and opera */
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 * {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* ie and edge */
+  scrollbar-width: none;  /* firefox */
 }

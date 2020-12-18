@@ -4,7 +4,7 @@ import SearchBox from './components/SearchBox';
 import 'tachyons';
 import './App.css'
 
-export default function App() {
+const App = () => {
   const [robots, setRobots] = useState([]);
   const [searchField, setSearchField] = useState('');
 
@@ -15,7 +15,8 @@ export default function App() {
   });
 
   const onSearchChange = (event) => {
-    setSearchField(event.target.value);
+    setSearchField(event.target.value); // update searchField
+    window.scrollTo(0, 0);              // scroll to the top of the page
   }
 
   const filteredRobots = robots.filter(robot => {
@@ -23,14 +24,16 @@ export default function App() {
   });
 
   return (
-    <>
-      {robots.length &&
-        <div className='tc'>
-          <h1 className='f1'>RoboFriends</h1>
-          <SearchBox searchChange={onSearchChange} />
-          <CardList robots={filteredRobots} />
-        </div>
-      }
-    </>
+    <div className='tc'>
+      <div style={{ height: '187px', position: 'fixed', top: '0', width: '100%', zIndex: '2', backgroundColor: 'rgb(0,128,128)' }}>
+        <h1 className='f1' style={{ color: 'rgb(7, 27, 82)' }}>RoboFriends</h1>
+        <SearchBox searchChange={onSearchChange} />
+      </div>
+      <div style={{ marginTop: '187px', zIndex: '1', backgroundColor: 'rgb(7, 27, 82)' }}>
+        <CardList robots={filteredRobots} />
+      </div>
+    </div>
   )
 }
+
+export default App;
