@@ -75,3 +75,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 robot images from [RoboHash](https://robohash.org/)
 robot info from [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
+dark theme from [Google's MATERIAL DESIGN](https://material.io/design/color/dark-theme.html)

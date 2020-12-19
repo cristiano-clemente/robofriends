@@ -1,12 +1,13 @@
 import React from 'react';
+import './Card.css'
 
 const Card = ({ id, name, email }) => {
   return (
-    <div className='tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5'>
+    <div className='card grow br3 pa3 ma2 dib'>
       <img src={`https://robohash.org/${id}?size=200x200`} alt='' />
       <div>
         <h2>{name}</h2>
-        <p>{email}</p>
+        <p>{email.toLowerCase()}</p>
       </div>
     </div>
   );

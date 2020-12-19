@@ -1,6 +1,38 @@
+:root {
+  --background-color: rgba(20, 20, 20);
+  --surface-color: rgba(50, 50, 50);
+  --overlay-color: rgba(80, 80, 80);
+  --primary-color: #BB86FC;
+  --secondary-color: #03DAC5;
+  --text-high-emphasis: rgba(255, 255, 255, 0.87);
+  --text-medium-emphasis: rgba(255, 255, 255, 0.60);
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-medium-emphasis);
+}
+
+/* make search box placeholder text white */
+::placeholder {
+  color: var(--text-medium-emphasis); /* chrome, firefox, opera, safari */
+  opacity: 1; /* firefox */
+}
+
+:-ms-input-placeholder {
+  color: var(--text-medium-emphasis); /* internet explorer */
+}
+
+::-ms-input-placeholder {
+  color: var(--text-medium-emphasis);  /* microsoft edge */
+}
+
+
+/* disable search box cancel button */
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
 }
 
 /* hide scrollbar */
