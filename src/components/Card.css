@@ -1,8 +1,0 @@
-.card {
-    color: var(--text-medium-emphasis);
-    background-color: var(--surface-color);
-}
-
-.card:hover {
-    color: var(--text-high-emphasis);
-}

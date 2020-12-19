@@ -1,3 +1,5 @@
+/* css for the app and the components */
+
 :root {
   --background-color: rgba(20, 20, 20);
   --surface-color: rgba(50, 50, 50);
@@ -8,11 +10,21 @@
   --text-medium-emphasis: rgba(255, 255, 255, 0.60);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
     color: var(--text-medium-emphasis);
+}
+
+.card {
+    color: var(--text-medium-emphasis);
+    background-color: var(--surface-color);
+}
+
+.card:hover {
+    color: var(--text-high-emphasis);
 }
 
 /* make search box placeholder text white */
