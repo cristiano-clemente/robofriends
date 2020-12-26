@@ -1,4 +1,4 @@
-# RoboFriends
+![](robofriends.png)
 
 {<br />
 &nbsp;&nbsp;&nbsp;"robot images": ["RoboHash"](https://robohash.org/),<br/>
