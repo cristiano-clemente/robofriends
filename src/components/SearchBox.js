@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const SearchByName = styled.input`
     outline: none;
@@ -32,16 +32,13 @@ const SearchByName = styled.input`
     ::-webkit-search-cancel-button {
       display: none;
     }
-  `;
+  `
 
-const SearchBox = ({ searchField, searchChange }) => {
-  return (
-    <SearchByName
-      type='search'
-      placeholder='Search by name'
-      onChange={searchChange}
-    />
-  );
-}
+const SearchBox = ({ searchField, searchChange }) =>
+  <SearchByName
+    type='search'
+    placeholder='Search by name'
+    onChange={searchChange}
+  />
 
-export default SearchBox;
+export default SearchBox
